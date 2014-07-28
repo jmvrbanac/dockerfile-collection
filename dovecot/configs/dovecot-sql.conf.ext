@@ -1,5 +1,21 @@
+# SQL for creating the users table
+# -----------------------------------
+# CREATE TABLE users (
+# email TEXT NOT NULL,
+# password TEXT NOT NULL,
+# home VARCHAR(255) NOT NULL,
+# uid INTEGER NOT NULL,
+# gid INTEGER NOT NULL
+# );
+
+# SQL for creating a user in the users table
+# -------------------------------------------
+# INSERT INTO users
+# (email, password, home, uid, gid)
+# VALUES ('{email}', '{password}', '{homedir}', 5000, 5000);
+
 # Database driver: mysql, pgsql, sqlite
-driver = sqlite 
+driver = sqlite
 
 # Database connection string. This is driver-specific setting.
 connect = /etc/dovecot/authdb.sqlite
