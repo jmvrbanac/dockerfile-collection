@@ -1,0 +1,20 @@
+# Authentication for system users. Included from 10-auth.conf.
+passdb {
+  driver = pam
+  # [session=yes] [setcred=yes] [failure_show_msg=yes] [max_requests=<n>]
+  # [cache_key=<key>] [<service name>]
+  #args = dovecot
+}
+
+##
+## User databases
+##
+
+userdb {
+  driver = passwd
+  # [blocking=no]
+  #args = 
+
+  # Override fields from passwd
+  #override_fields = home=/home/virtual/%u
+}

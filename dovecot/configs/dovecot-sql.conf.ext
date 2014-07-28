@@ -1,0 +1,19 @@
+# Database driver: mysql, pgsql, sqlite
+driver = sqlite 
+
+# Database connection string. This is driver-specific setting.
+connect = /etc/dovecot/authdb.sqlite
+
+# Default password scheme.
+default_pass_scheme = SHA512-CRYPT
+
+# Queries
+password_query = \
+  SELECT email as user, password \
+  FROM users WHERE email = '%u'
+
+user_query = \
+  SELECT home, uid, gid \
+  FROM users WHERE email = '%u'
+
+iterate_query = SELECT email AS user FROM users

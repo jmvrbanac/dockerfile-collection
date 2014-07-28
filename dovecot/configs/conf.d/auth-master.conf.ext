@@ -1,0 +1,7 @@
+# Authentication for master users. Included from 10-auth.conf.
+passdb {
+  driver = passwd-file
+  master = yes
+  args = /etc/dovecot/master-users
+  pass = yes
+}

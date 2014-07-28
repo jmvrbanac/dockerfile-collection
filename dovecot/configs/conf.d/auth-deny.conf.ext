@@ -1,0 +1,9 @@
+# Deny access for users. Included from 10-auth.conf.
+
+passdb {
+  driver = passwd-file
+  deny = yes
+
+  # File contains a list of usernames, one per line
+  args = /etc/dovecot/deny-users
+}
