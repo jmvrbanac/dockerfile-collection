@@ -1,10 +1,14 @@
 #!/bin/bash
 
-# Adding location to put CAFE files after execution
+# Adding required directories (if they don't exist)
 mkdir -p /cafe/volume/cafe_home
+mkdir -p /cafe/volume/configs
 
 # Update all
 sh /cafe/update.sh
+
+# Copy configs
+cp -r /cafe/volume/configs/* /root/.opencafe/configs/
 
 echo "Running Command: cafe-runner $@"
 cafe-runner $@
