@@ -11,7 +11,7 @@ Starting a container
 ----------------------
 
 ```
-sudo docker run -p 5000:5000 -p 35357:35357 -t jmvrbanac/keystone
+sudo docker run -p 5000:5000 -p 35357:35357 -t jmvrbanac/simple-keystone
 ```
 
 Once the Container has been started you can add tenant, roles,
