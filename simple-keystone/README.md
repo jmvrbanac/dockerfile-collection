@@ -3,7 +3,7 @@ Simple Dockerized Keystone
 
 Warning: This is a personal docker image that is designed to aid
 in the development and testing of projects that use Keystone
-middleware for authenication and authorization.
+middleware for authentication and authorization.
 
 **Here be Dragons! Use at your own risk!!**
 
