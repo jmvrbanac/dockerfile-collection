@@ -6,7 +6,7 @@ FROM ubuntu:latest
 MAINTAINER John Vrbanac <john.vrbanac@linux.com>
 
 ENV DEBIAN_FRONTEND noninteractive
-RUN apt-get update; apt-get install -y vim git python-pip python-dev libsqlite3-dev libffi-dev libssl-dev
+RUN apt-get update; apt-get install -y vim git python-pip python-dev python-psycopg2 libsqlite3-dev libffi-dev libssl-dev
 
 RUN mkdir -p /opt/docker_app/
 RUN git clone https://github.com/cloudkeep/barbican.git /opt/docker_app/barbican
