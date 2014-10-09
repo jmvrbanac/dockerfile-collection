@@ -1,4 +1,4 @@
-# jmvrbanac/keystone
+# jmvrbanac/simple-keystone
 #
 # Docker image for running Keystone for development and testing ONLY
 #

@@ -29,3 +29,7 @@ Default Keystone administrator user:
 
  * Username: ```admin```
  * Password: ```password```
+
+Default Service Token:
+
+ * OS_SERVICE_TOKEN: ```ADMIN_TOKEN```
