@@ -1,7 +1,7 @@
 # Hastebin on Docker
-# VERSION               0.1
+# VERSION               0.2
 
-FROM dockerfile/nodejs
+FROM node
 MAINTAINER John Vrbanac <john.vrbanac@linux.com>
 
 RUN git clone https://github.com/seejohnrun/haste-server.git /opt/haste
